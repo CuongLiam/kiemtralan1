@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .item1 {
+        float: left;
+        width: 33.33%;
+        padding: 100px;
+      }
+
+      .menubar {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-around;
+        background-color: rgb(28, 122, 184);
+        color: aliceblue;
+        position: fixed;
+        width: 100%;
+        margin: 0;
+        top: 0;
+        left: 0;
+        z-index: 5;
+      }
+      .below {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-around;
+        background-color: rgb(50, 192, 31);
+        color: aliceblue;
+        position: absolute;
+        width: 100%;
+        margin: 0;
+        top: 1200px;
+        left: 0;
+        z-index: 5;
+      }
+      .ok {
+        margin-top: 40px;
+        font-size: medium;
+        text-align: center;
+        width: 300px;
+        color: black;
+        font-size: 25px;
+      }
+      .product-list {
+        float: left;
+        border: 5px solid black;
+        text-align: center;
+        content: "";
+        clear: both;
+        display: table;
+        justify-content: space-around;
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="menubar">
+      <il>
+        <img src="/picture/logo.png" alt="" width="300px" height="100px" />
+      </il>
+      <il class="ok">Home</il>
+      <il class="ok">Product</il>
+      <il class="ok">About</il>
+      <il class="ok">Contact</il>
+    </ul>
+    <div class="product-list">
+      <div class="item1">
+        <img src="/picture/duck.jpg" alt="" width="200px" />
+        <h3>Duck</h3>
+        <h3>420$</h3>
+      </div>
+    </div>
+    <div class="product-list">
+      <div class="item1">
+        <img src="/picture/duck.jpg" alt="" width="200px" />
+        <h3>Duck</h3>
+        <h3>420$</h3>
+      </div>
+    </div>
+
+    <ul class="below">
+      <il>
+        <img src="/picture/logo.png" alt="" width="300px" height="100px" />
+      </il>
+      <il class="ok">Phone</il>
+      <il class="ok">Address</il>
+      <div>
+        <il class="ok">FB YB</il><br />
+        <img class="approve" src="/picture/approve.png" alt="" width="100px" />
+      </div>
+    </ul>
+  </body>
+</html>
